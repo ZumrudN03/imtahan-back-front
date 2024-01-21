@@ -1,0 +1,91 @@
+.newArrivalCards {
+  max-width: 70%;
+  margin: 50 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  .newArrivalCard {
+    width: 230px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    &:hover  i {
+      opacity: 1;
+    }
+    &:hover .newArrivalCard_hover{
+        opacity: 1;
+    }
+    img {
+      width: 230px;
+      height: 240px;
+      object-fit: cover;
+    }
+    &_title {
+      font-size: 14px;
+      color: #282828;
+      font-weight: 500;
+      transition: 300ms;
+      padding: 15px 0px 10px 0px;
+      &:hover {
+        color: #b5aec4;
+      }
+    }
+    &_prices {
+      display: flex;
+      gap: 15px;
+      .newArrivalCard_price {
+        color: #fe4c50;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .newArrivalCard_oldPrice {
+        font-size: 14px;
+        color: #b5aec4;
+        text-decoration: line-through;
+      }
+    }
+    i {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      cursor: pointer;
+      color: #b5aec4;
+      opacity: 0;
+      transition: 300ms;
+    }
+    .fa-eye{
+        margin-left: 30px;
+    }
+    &_hover {
+      width: 230px;
+      height: 45px;
+      background-color: #fe4c50;
+      color: white;
+      transition: 300ms;
+      font-size: 13px;
+      font-weight: 500;
+      padding-top:15px;
+      opacity: 0;
+      cursor: pointer;
+    }
+    &_discount{
+        color: #fe4c50;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-weight: 500;
+    }
+    &_sale{
+        color: #fe4c50;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-weight: 500;
+    }
+  }
+}

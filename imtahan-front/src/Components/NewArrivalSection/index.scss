@@ -1,0 +1,33 @@
+#newArrivalSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+    gap: 20px;
+
+    .newArrivalSection_title{
+        font-size: 40px;
+        color: #282828;
+        font-weight: 500;
+    }
+    .newArrivalSection_btn{
+        display: flex;
+        flex-wrap: wrap;
+        button{
+            padding: 10px 25px;
+            border: 1px solid rgb(236, 236, 236);
+            font-size: 16px;
+            background-color: white;
+            border-radius: 4px;
+        }
+        .newArrivalSection_btn_allBtn{
+            background-color: #fe4c50;
+            color: white;
+        }
+    }
+    .line{
+        width: 60px;
+        height: 4px;
+        background-color: #fe4c50;
+    }
+}

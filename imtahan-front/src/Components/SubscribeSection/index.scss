@@ -1,0 +1,104 @@
+.subscribe_container {
+  background-color: #f2f2f2;
+  max-width: 100%;
+  min-height: 10vh;
+  margin: 50px 0px;
+  .subscribeSection {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 14vh;
+    &_textBox{
+        &_title {
+            font-size: 24px;
+            color: #282828;
+            font-weight: 500;
+            padding-bottom: 5px;
+
+          }
+          &_desc{
+              font-size: 15px;
+              color: #51545f;
+              font-weight: 500;
+              
+          }
+    }
+    &_input{
+        input{
+            width: 300px;
+            height: 45px;
+            outline: none;
+            border: none;
+            padding-left: 10px;
+        }
+        button{
+            width: 160px;
+            height: 45px;
+            background-color: #FE4C50;
+            border: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .subscribe_container {
+    background-color: #f2f2f2;
+    max-width: 100%;
+    min-height: 10vh;
+    margin: 50px 0px;
+    .subscribeSection {
+      max-width: 70%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      flex-direction: column;
+      min-height: 14vh;
+      &_textBox{
+        padding: 10px 0px;
+          &_title {
+              font-size: 20px;
+              color: #282828;
+              font-weight: 500;
+              padding-bottom: 5px;
+  
+            }
+            &_desc{
+                font-size: 13px;
+                color: #51545f;
+                font-weight: 500;
+                
+            }
+      }
+      &_input{
+        padding: 10px 0px;
+          input{
+              width: 200px;
+              height: 30px;
+              outline: none;
+              border: none;
+              padding-left: 10px;
+              margin: 0px 0px 10px 0px;
+          }
+          button{
+              width: 120px;
+              height: 30px;
+              background-color: #FE4C50;
+              border: none;
+              color: white;
+              font-size: 15px;
+              font-weight: 500;
+          }
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,37 @@
+.caregorySection {
+  max-width: 60%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .caregorySection_card {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 22px;
+      color: #1e1e27;
+      transition: 300ms;
+      padding: 15px 30px;
+      font-weight: 500;
+      background-color: white;
+      &:hover {
+        color: #b5aec4;
+      }
+    }
+  }
+  .men {
+    background-image: url("https://preview.colorlib.com/theme/coloshop/images/banner_3.jpg.webp");
+  }
+  .acc {
+    background-image: url("https://preview.colorlib.com/theme/coloshop/images/banner_2.jpg.webp");
+  }
+  .women {
+    background-image: url("https://preview.colorlib.com/theme/coloshop/images/banner_1.jpg.webp");
+  }
+}
